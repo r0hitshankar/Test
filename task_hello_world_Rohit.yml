@@ -6,6 +6,6 @@ image_resource:
   source: {repository: busybox}
 
 run:
-  path: echo
-  args: ["hello world from Rohit"]
+  path: python
+  args: [hello.py]
 
