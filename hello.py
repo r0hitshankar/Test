@@ -1,13 +1,15 @@
-import openpyxl
-from openpyxl.styles import Font, Alignment
-
-#Make adjustment to summary sheet and move that to start
+''''import openpyxl
 book = openpyxl.load_workbook("URLForMonitors.xlsx")
 #book.active = book.sheetnames.index('Summary')
 sheet = book.active
-
+book.save("URLForMonitors.xlsx")  
+'''
 import datetime
 today = datetime.datetime.now()
 print("Monitor Python file")
 print(today.strftime("%d-%b %H Hr"))
-book.save("URLForMonitors.xlsx")  
+import requests
+
+str2="https://stackoverflow.com"
+r = requests.head(str2)
+print(str(str2)+":"+str(r.status_code))
