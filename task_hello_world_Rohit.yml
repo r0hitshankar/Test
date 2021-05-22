@@ -10,6 +10,9 @@ inputs:
 #    path: gopath/src/github.com/cloudfoundry-community/simple-go-web-app
 
 run:
-  path: python
-  args: [resource-tutorial/hello.py]
+  path: pip
+  args: [install requests]
+
+#  path: python
+#  args: [resource-tutorial/hello.py]
 
