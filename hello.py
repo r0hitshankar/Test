@@ -1,9 +1,3 @@
-''''import openpyxl
-book = openpyxl.load_workbook("URLForMonitors.xlsx")
-#book.active = book.sheetnames.index('Summary')
-sheet = book.active
-book.save("URLForMonitors.xlsx")  
-'''
 import datetime
 today = datetime.datetime.now()
 print("Monitor Python file")
