@@ -11,7 +11,7 @@ inputs:
 
 run:
   path: pip
-  args: [install2]
+  args: [install requests]
 #  args: [requests]
 
 #  path: python
