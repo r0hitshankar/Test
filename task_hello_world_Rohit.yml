@@ -18,6 +18,7 @@ run:
 #  args: [install requests]
 #  args: [requests]
 
+run:
   path: python
   args: [resource-tutorial/hello.py]
 
