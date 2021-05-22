@@ -12,7 +12,7 @@ inputs:
 run:
   path: pip
   args: [install] 
-  args: [requests]
+#  args: [requests]
 
 #  path: python
 #  args: [resource-tutorial/hello.py]
