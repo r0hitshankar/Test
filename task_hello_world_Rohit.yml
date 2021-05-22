@@ -11,7 +11,8 @@ inputs:
 
 run:
   path: pip
-  args: [install requests]
+  args: [install] 
+  args: [requests]
 
 #  path: python
 #  args: [resource-tutorial/hello.py]
