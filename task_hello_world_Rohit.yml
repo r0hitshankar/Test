@@ -17,9 +17,9 @@ run:
 #    - -c
 #    - pip install requests
 
-  path: pip
-  args: ["install", "requests"]
+#  path: pip
+#  args: ["install", "requests"]
 
-#  path: python
-#  args: [resource-tutorial/hello.py]
+  path: python
+  args: [resource-tutorial/hello.py]
 
