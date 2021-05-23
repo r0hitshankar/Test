@@ -17,9 +17,9 @@ run:
 #    - -c
 #    - pip install requests
 
-  path: venv
-  args: ["install", "openpyxl"]
+#  path: venv
+#  args: ["install", "openpyxl"]
 
-#  path: python
-#  args: [resource-tutorial/hello.py]
+  path: python
+  args: [resource-tutorial/hello.py]
 
