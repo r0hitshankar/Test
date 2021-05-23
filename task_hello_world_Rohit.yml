@@ -12,13 +12,10 @@ inputs:
 run:
   path: /bin/sh
   args:
-    - -c
-    - pip install requests
-#  path: pip
-#  args: [install requests]
-#  args: [requests]
-
-run:
-  path: python
-  args: [resource-tutorial/hello.py]
+    - resource-tutorial/build_script.sh
+#    - -c
+#    - pip install requests
+#run:
+#  path: python
+#  args: [resource-tutorial/hello.py]
 
