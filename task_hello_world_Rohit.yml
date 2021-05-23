@@ -9,7 +9,25 @@ inputs:
   - name: resource-tutorial
 #    path: gopath/src/github.com/cloudfoundry-community/simple-go-web-app
 
-run:
+jobs:
+- name: job
+  plan:
+  - task: install-packages
+    config:
+      platform: linux
+      run:
+        path: pip
+        args: ["install", "openpyxl"]
+  - task: run-script
+    config:
+      inputs:
+        - name: resource-tutorial
+      platform: linux
+      run:
+        path: python
+        args: [resource-tutorial/hello.py]
+        
+#run:
 #  path: /bin/sh
 #  args:
 #    - resource-tutorial/build_script.sh
@@ -17,9 +35,9 @@ run:
 #    - -c
 #    - pip install requests
 
-#  path: venv
+#  path: pip
 #  args: ["install", "openpyxl"]
 
-  path: python
-  args: [resource-tutorial/hello.py]
+#  path: python
+#  args: [resource-tutorial/hello.py]
 
