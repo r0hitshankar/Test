@@ -17,7 +17,7 @@ run:
 #    - -c
 #    - pip install requests
 
-  path: pip
+  path: venv
   args: ["install", "openpyxl"]
 
 #  path: python
