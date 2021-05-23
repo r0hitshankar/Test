@@ -1,0 +1,25 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source: {repository: python, tag : latest}
+
+inputs:
+  - name: resource-tutorial
+#    path: gopath/src/github.com/cloudfoundry-community/simple-go-web-app
+
+run:
+#  path: /bin/sh
+#  args:
+#    - resource-tutorial/build_script.sh
+
+#    - -c
+#    - pip install requests
+
+#  path: pip
+#  args: ["install", "openpyxl"]
+
+  path: python
+  args: [resource-tutorial/hello.py]
+
